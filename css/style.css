@@ -1,0 +1,583 @@
+
+/* VARIÁVEIS */
+:root {
+    --font-family1: 'Quicksand', sans-serif;
+    --font-family2: 'Shrikhand', cursive;
+    --color1: #1C191A;
+    --color2: #F6E7D8;
+    --color3: #F4B324;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FORMATAÇÃO COMUM */
+
+.btn {
+    display: inline-block;
+    background-color: var(--color3);
+    color: var(--color2);   
+    padding: 1rem 3rem;
+    
+}
+
+
+/* SUPER-INFO */
+
+.super-info-bg {
+    background-color: var(--color1);
+}
+
+.super-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.super-info span, span a {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+}
+
+/* HEADER */
+
+.header-bg {
+    background-color: var(--color2);
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.header a {
+    color: var(--color1);
+    font-family: var(--font-family1);
+    font-weight: 400;
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.logo img {
+    max-width: 2rem;
+}
+
+.logo h1 {
+    font-family: var(--font-family2);
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    color: var(--color1);
+    display: block;
+}
+
+/* HOME */
+
+.home-bg {
+    background-image: url(../img/bg-image1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    max-width: 720px;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.home h2 {
+    color: var(--color2);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+/* TEXT GRID */
+
+.text-grid-bg {
+    background-color: var(--color2);
+}
+
+.text-grid {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+    text-align: center;
+}
+
+.text-grid h2 {
+    color: var(--color1);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text-grid p {
+    color: var(--color1);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* PHOTOS GRID */
+
+.photos-grid-bg {
+    background-color: var(--color2);
+}
+
+.photos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.5rem 5rem 0.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.photos-grid div {
+    flex: 1 1 350px;
+}
+
+/* SINTA O MAR */
+
+.sinta-o-mar-bg {
+    background-color: var(--color1);
+}
+
+.sinta-o-mar {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.sinta-o-mar div:nth-child(1) {
+    flex-basis: 480px;
+}
+
+.sinta-o-mar h2 {
+    color: var(--color2);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;   
+}
+
+.sinta-o-mar p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* UM GRUPO HOTELEIRO */
+
+.um-grupo-hoteleiro-bg {
+    background-color: var(--color2);
+}
+
+.um-grupo-hoteleiro {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.um-grupo-hoteleiro div:nth-child(2) {
+    flex-basis: 480px;
+}
+
+.um-grupo-hoteleiro h2 {
+    color: var(--color1);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;   
+    text-align: right;
+}
+
+.um-grupo-hoteleiro p {
+    color: var(--color1);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+/* CULINÁRIA QUE TRAZ */
+
+.culinaria-que-traz-bg {
+    background-color: var(--color1);
+}
+
+.culinaria-que-traz {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.culinaria-que-traz div:nth-child(1) {
+    flex-basis: 480px;
+}
+
+.culinaria-que-traz h2 {
+    color: var(--color2);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;   
+}
+
+.culinaria-que-traz p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* OPINIÕES DOS NOSSOS HÓSPEDES (TEXTO)*/
+
+.opinioes-dos-nossos-bg {
+    background-color: var(--color2);
+}
+
+.opinioes-dos-nossos {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+    text-align: center;
+}
+
+.opinioes-dos-nossos h2 {
+    color: var(--color1);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.opinioes-dos-nossos p {
+    color: var(--color1);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* OPINIÕES */
+
+.opinioes-bg {
+    background-color: var(--color2);
+}
+
+.opinioes {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 0.5rem 5rem 0.5rem;
+
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.opinioes p {
+    color: var(--color1);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-style: italic;
+    flex-basis: 260px;
+}
+
+/* ÚNICO HOTEL */
+
+.unico-hotel-bg {
+    background-color: var(--color1);
+}
+
+.unico-hotel {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+    text-align: center;
+}
+
+.unico-hotel h2 {
+    color: var(--color2);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.unico-hotel p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* SERVIÇOS */
+
+.servicos-bg {
+    background-color: var(--color1);
+}
+
+.servicos {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 0.5rem 5rem 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.servicos div {
+    flex-basis: 260px;
+}
+
+.servicos div p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.servicos div i {
+    color: var(--color2);
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* NEWSLETTER */
+
+.newsletter-bg {
+    background-image: url(../img/bg-image2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter {
+    max-width: 720px;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.newsletter h2 {
+    color: var(--color2);
+    font-family: var(--font-family2);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.newsletter form input {
+    flex-basis: 450px;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid var(--color2);
+    outline: none;
+
+    color: var(--color2);
+    opacity: 1;
+    font-family: var(--font-family1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.newsletter form input:focus {
+    border: 2px solid var(--color3);
+}
+
+.newsletter form input::placeholder { 
+    color: var(--color2);
+    opacity: 0.7;
+    font-family: var(--font-family1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+
+.newsletter form a {
+    flex-basis: 200px;
+    padding: 1rem;
+    font-family: var(--font-family1);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/* FOOTER */
+
+.footer-bg {
+    background-color: var(--color1);
+}
+
+.footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 0.5rem;
+}
+
+.footer p {
+    color: var(--color2);
+    font-family: var(--font-family1);
+    font-size: clamp(0.8125rem, 1.125rem, 1.25rem);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer i {
+    color: var(--color2);
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
