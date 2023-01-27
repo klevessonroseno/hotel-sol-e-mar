@@ -46,9 +46,9 @@ a {
 .super-info span a, .super-info span {
   color: var(--color2);
   font-size: 1rem;
-  font-family: var(--font-family1);
   font-weight: 600;
-  line-height: 1.4;
+  font-family: var(--font-family1);
+  list-style: 1.4;
 }
 
 /* HEADER */
@@ -82,10 +82,10 @@ a {
 }
 
 .logo h1 {
+  color: var(--color1);
   font-size: 1.75rem;
   font-family: var(--font-family2);
   font-weight: 400;
-  color: var(--color1);
 }
 
 /* MENU */
@@ -96,15 +96,11 @@ a {
   flex-wrap: wrap;
 }
 
-.menu a {
+.menu li a {
   color: var(--color1);
-  font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 600;
-}
-
-.menu a:hover, .menu a:focus {
-  opacity: 0.8;
+  font-family: var(--font-family1);
 }
 
 /* HOME */
@@ -133,8 +129,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .home p {
@@ -142,8 +138,8 @@ a {
   font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4;
   margin-bottom: 2rem;
+  line-height: 1.4;
 }
 
 .home a {
@@ -151,8 +147,6 @@ a {
   font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 2rem;
   padding: 1rem 3rem;
   background-color: var(--color3);
 }
@@ -175,8 +169,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .viva-o-melhor p {
@@ -200,8 +194,8 @@ a {
   gap: 1rem;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .grid div {
@@ -228,7 +222,6 @@ a {
 
 .sinta-o-sol div:nth-child(1) {
   flex: 0 1 480px;
-  padding: 0 0.5rem;
   text-align: center;
 }
 
@@ -237,8 +230,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .sinta-o-sol div:nth-child(1) p {
@@ -269,7 +262,6 @@ a {
 
 .um-grupo div:nth-child(2) {
   flex: 0 1 480px;
-  padding: 0 0.5rem;
   text-align: center;
 }
 
@@ -278,8 +270,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .um-grupo div:nth-child(2) p {
@@ -310,7 +302,6 @@ a {
 
 .culinaria div:nth-child(1) {
   flex: 0 1 480px;
-  padding: 0 0.5rem;
   text-align: center;
 }
 
@@ -319,8 +310,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .culinaria div:nth-child(1) p {
@@ -349,8 +340,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .nossos-hospedes p {
@@ -361,11 +352,7 @@ a {
   line-height: 1.4;
 }
 
-/* COMENTÁRIOS */
-
-.comentarios-bg {
-  background-color: var(--color2);
-}
+/* COMENTARIOS */
 
 .comentarios {
   max-width: 960px;
@@ -384,10 +371,10 @@ a {
 }
 
 .comentarios div p {
-  text-align: center;
   color: var(--color1);
   font-family: var(--font-family1);
-  font-size: 1rem;
+  text-align: center;
+  list-style: 1.4;
   font-style: italic;
 }
 
@@ -409,8 +396,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .unico-hotel p {
@@ -421,11 +408,7 @@ a {
   line-height: 1.4;
 }
 
-/* SERVIÇOS */ 
-
-.servicos-bg {
-  background-color: var(--color1);
-}
+/* COMENTARIOS */
 
 .servicos {
   max-width: 960px;
@@ -441,18 +424,22 @@ a {
 
 .servicos div {
   flex: 0 1 260px;
-  text-align: center;
 }
 
 .servicos div p {
   color: var(--color2);
   font-family: var(--font-family1);
+  text-align: center;
+  list-style: 1.4;
   font-size: 1rem;
 }
 
 .servicos div i {
   color: var(--color2);
+  text-align: center;
+  list-style: 1.4;
   font-size: 3rem;
+  display: block;
   margin-bottom: 1rem;
 }
 
@@ -482,8 +469,8 @@ a {
   font-family: var(--font-family2);
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .newsletter p {
@@ -491,8 +478,8 @@ a {
   font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4;
   margin-bottom: 2rem;
+  line-height: 1.4;
 }
 
 .newsletter a {
@@ -500,8 +487,6 @@ a {
   font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 2rem;
   padding: 1rem 3rem;
   background-color: var(--color3);
 }
@@ -509,39 +494,33 @@ a {
 .newsletter form {
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
   flex-wrap: wrap;
+  padding: 0 0.5rem;
+  gap: 1rem;
 }
 
 .newsletter form input {
-  height: 3.25rem;
   flex: 1 1 300px;
   padding: 1rem;
+  outline: none;
   background-color: transparent;
   border: 2px solid var(--color2);
+
   color: var(--color2);
-  font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 600;
-  outline: none;
+  font-family: var(--font-family1);
 }
 
 .newsletter form input::placeholder {
   color: var(--color2);
-  font-family: var(--font-family1);
   font-size: 1rem;
   font-weight: 600;
+  font-family: var(--font-family1);
 }
 
 .newsletter form input:focus {
   border: 2px solid var(--color3);
-}
-
-.newsletter form a {
-  height: 3.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* FOOTER */
@@ -553,32 +532,32 @@ a {
 .footer {
   max-width: 480px;
   margin: 0 auto;
-  padding: 5rem 0.5rem;
-  gap: 1rem;
+  padding: 4rem 0.5rem;
 }
 
 .footer ul {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
 }
 
-.footer ul li a {
+.footer ul li a i {
   color: var(--color2);
   font-size: 2rem;
 }
 
 .footer p {
+  text-align: center;
   color: var(--color2);
   font-family: var(--font-family1);
-  padding: 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.4;
 }
 
-@media (max-width: 841px) {
+@media (max-width:842px) {
   .primeiro {
     order: -1;
   }
